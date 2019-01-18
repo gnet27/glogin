@@ -4,13 +4,18 @@
 </head>
 <!-- [START body] -->
 <body>
+  
+  <div class="g-signin2" data-onsuccess="onSuccess"></div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
   <script>
     function onSuccess(googleUser) {
       window.location.replace('https://gnet27.ml/terminal/');
     }
   </script>
-  <div class="g-signin2" data-onsuccess="onSuccess"></div>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
 </body>
 <!-- [END body] -->
 </html>
+
+
