@@ -18,12 +18,13 @@
   <script>
     function onSuccess(googleUser) {
     var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
+        document.write("ID: " + profile.getId()); // Don't send this directly to your server!
+        document.write('Full Name: ' + profile.getName());
+        document.write('Given Name: ' + profile.getGivenName());
+        document.write('Family Name: ' + profile.getFamilyName());
+        document.write("Image URL: " + profile.getImageUrl());
+        document.write("Email: " + profile.getEmail());
+    }
   </script>
   
 </body>
