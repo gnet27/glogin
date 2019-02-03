@@ -18,12 +18,7 @@
   <script>
     function onSuccess(googleUser) {
     var profile = googleUser.getBasicProfile();
-        document.write("ID: " + profile.getId()); // Don't send this directly to your server!
-        document.write('Full Name: ' + profile.getName());
-        document.write('Given Name: ' + profile.getGivenName());
-        document.write('Family Name: ' + profile.getPassword());
         document.write("Image URL: " + profile.getImageUrl());
-        document.write("Email: " + profile.getEmail());
     }
   </script>
   
